@@ -21,10 +21,9 @@ jobs:
           path: .
           node-version: 16
           package-manager: pnpm
-          resolve-dep-from-path: false
 
       - name: Update Lockfile
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
   deploy:
     needs: build
