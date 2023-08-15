@@ -28,10 +28,6 @@ concurrency:
   group: 'pages'
   cancel-in-progress: false
 
-env:
-  BUILD_PATH: '.' # default value when not using subfolders
-  # BUILD_PATH: subfolder
-
 jobs:
   build:
     name: Build
