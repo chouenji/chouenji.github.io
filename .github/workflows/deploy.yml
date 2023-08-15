@@ -28,14 +28,13 @@ concurrency:
   group: 'pages'
   cancel-in-progress: false
 
-env:
-  BUILD_PATH: '.' # default value when not using subfolders
-  # BUILD_PATH: subfolder
-
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      BUILD_PATH: '.' # default value when not using subfolders
+      # BUILD_PATH: subfolder
     steps:
       - name: Checkout
         uses: actions/checkout@v3
