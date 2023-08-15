@@ -38,7 +38,7 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Clear pnpm store
-        run: pnpm store prune --all
+        run: pnpm store prune
       - name: Detect package manager
         id: detect-package-manager
         run: |
