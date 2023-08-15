@@ -32,18 +32,14 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    env:
-      BUILD_PATH: '.' # default value when not using subfolders
-      # BUILD_PATH: subfolder
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Clear pnpm
+      - name: Install pnpm
         run: npm install -g pnpm
-      - name: Find pnpm path
-      - run: echo "pnpm=$(which pnpm)" >> $GITHUB_ENV
       - name: Clear pnpm store
-      - run: ${{ env.pnpm }} store prune --all
+        run: pnpm store prune --all
+      - name: Detect package manager
         id: detect-package-manager
         run: |
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
