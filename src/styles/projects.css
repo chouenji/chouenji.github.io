@@ -1,0 +1,41 @@
+.carousel-image-container {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  padding-bottom: 75%; /* Adjust to maintain aspect ratio (e.g., for 4:3 aspect ratio) */
+  overflow: hidden;
+}
+
+.carousel-image {
+  max-width: 100% !important;
+  max-height: 100%;
+  width: 1000px;
+  border-radius: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-in {
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+.slide-in.active {
+  margin-left: 0;
+  opacity: 1;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
