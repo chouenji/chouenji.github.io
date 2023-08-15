@@ -17,9 +17,8 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
 
-      # Add step to clean up cache
-      - name: Clean up cache
-        run: pnpm cache clear
+      - name: Clean up cache using npm
+        run: npm cache clean --force
 
       - name: Use Node.js
         uses: actions/setup-node@v2
@@ -34,7 +33,6 @@ jobs:
         #   node-version: 16
         #   package-manager: yarn
 
-      # Add this step to update the lockfile
       - name: Update Lockfile
         run: pnpm install --no-frozen-lockfile
 
