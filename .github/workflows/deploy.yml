@@ -16,6 +16,16 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
+
+      # Add step to clean up cache
+      - name: Clean up cache
+        run: pnpm cache clear
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
       - name: Install, build, and upload your site
         uses: withastro/action@v0
         # Uncomment and provide parameters if needed
