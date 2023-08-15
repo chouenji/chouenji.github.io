@@ -34,7 +34,7 @@ jobs:
         #   package-manager: yarn
 
       - name: Update Lockfile
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
 
   deploy:
     needs: build
