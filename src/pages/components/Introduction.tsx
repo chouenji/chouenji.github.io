@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import pp from '@assets/pp.jpg';
-import '@styles/introduction.css';
+import '../../styles/introduction.css';
 
 export default function Introduction() {
   const [isMounted, setIsMounted] = useState(false);

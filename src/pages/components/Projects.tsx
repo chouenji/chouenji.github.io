@@ -3,15 +3,15 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Image, Link } from '@nextui-org/react';
 
-import profile1 from '@assets/project1.png';
-import profile1b from '@assets/project1b.png';
-import project1c from '@assets/project1c.png';
-import profile2 from '@assets/project2.png';
-import profile2b from '@assets/project2b.png';
-import project2c from '@assets/project2c.png';
-import profile3 from '@assets/project3.png';
-import profile3b from '@assets/project3b.png';
-import project3c from '@assets/project3c.png';
+import profile1 from '../../assets/project1.png';
+import profile1b from '../../assets/project1b.png';
+import project1c from '../../assets/project1c.png';
+import profile2 from '../../assets/project2.png';
+import profile2b from '../../assets/project2b.png';
+import project2c from '../../assets/project2c.png';
+import profile3 from '../../assets/project3.png';
+import profile3b from '../../assets/project3b.png';
+import project3c from '../../assets/project3c.png';
 
 export default function Projects() {
   const [isMounted, setIsMounted] = useState(false);
