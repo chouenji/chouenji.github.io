@@ -38,9 +38,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Clear pnpm
+        run: npm install -g pnpm
+      - name: Find pnpm path
+      - run: echo "pnpm=$(which pnpm)" >> $GITHUB_ENV
       - name: Clear pnpm store
-        run: pnpm store prune --all
-      - name: Detect package manager
+      - run: ${{ env.pnpm }} store prune --all
         id: detect-package-manager
         run: |
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
