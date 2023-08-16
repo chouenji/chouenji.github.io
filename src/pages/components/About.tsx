@@ -35,7 +35,7 @@ export default function About() {
       >
         <div className="text-4xl font-bold mb-6">About Me</div>
         <div className="flex flex-col items-center text-justify">
-          <Image className="w-96 mx-auto" src={grad} />
+          <Image className=" w-80 mx-auto" src={grad} />
           <br />
           <p className="w-10/12 sm:text-sm md:text-base lg:text-lg xl:text-xl md:ml-3 ml-0 mb-3 text-left md:text-justify">
             I earned a Bachelor's degree in Computer Science from Brooklyn
