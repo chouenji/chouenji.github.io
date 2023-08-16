@@ -6,7 +6,7 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1025px) and (min-width: 768px) {
   .responsive-image {
     width: 40%; /* Adjust based on visual preference */
     max-width: 100%; /* Prevent image from exceeding its natural size */

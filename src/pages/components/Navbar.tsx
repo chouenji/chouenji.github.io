@@ -36,8 +36,6 @@ export default function DisplayNavbar() {
       { threshold: 0.5 }
     );
 
-    console.log(activeSection);
-
     const sections = document.querySelectorAll('.section');
     sections.forEach((section) => {
       observer.observe(section);
@@ -125,7 +123,7 @@ export default function DisplayNavbar() {
               className="w-full"
               color="foreground"
               href={`#${item.toLowerCase()}`}
-              onClick={handleMobileMenuItemClick} // Add this click event handler
+              onClick={handleMobileMenuItemClick}
             >
               {item}
             </Link>
