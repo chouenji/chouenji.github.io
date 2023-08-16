@@ -44,7 +44,7 @@ export default function Projects() {
         isMounted ? 'slide-in' : ''
       }`}
     >
-      <h1 className="text-3xl font-bold mb-4 mt-40">Projects</h1>
+      <h1 className="text-4xl font-bold mb-4">Projects</h1>
       <p>Here are some of my projects</p>
       <div className="project p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
