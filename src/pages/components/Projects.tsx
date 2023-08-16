@@ -40,11 +40,9 @@ export default function Projects() {
     <div
       id="projects"
       ref={projectsRef}
-      className={`section text-center min-h-screen ${
-        isMounted ? 'slide-in' : ''
-      }`}
+      className={`section text-center h-screen ${isMounted ? 'slide-in' : ''}`}
     >
-      <h1 className="text-4xl font-bold mb-4">Projects</h1>
+      <h1 className="text-3xl font-bold mb-4">Projects</h1>
       <p>Here are some of my projects</p>
       <div className="project p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-bold mb-2">FriendFinder</h3>

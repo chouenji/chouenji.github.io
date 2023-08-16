@@ -40,7 +40,6 @@ export default function DisplayNavbar() {
     sections.forEach((section) => {
       observer.observe(section);
     });
-    console.log(sections);
 
     return () => {
       sections.forEach((section) => {
