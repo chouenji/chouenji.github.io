@@ -21,8 +21,13 @@ export default function Introduction() {
         src={pp}
         alt="Profile"
       />
-      <h1 className="text-4xl font-bold">Hello, I'm Kevin do Canto</h1>
-      <p className="text-2xl font-semibold">I'm a Full Stack Developer</p>
+      <h1 className="text-2xl md:text-2xl lg:text-xl xl:text-4xl font-bold">
+        Hello, I'm Kevin do Canto
+      </h1>
+
+      <p className="text-xl md:text-2xl font-semibold">
+        I'm a Full Stack Developer
+      </p>
     </div>
   );
 }
