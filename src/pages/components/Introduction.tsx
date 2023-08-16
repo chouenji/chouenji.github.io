@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Image } from '@nextui-org/react';
 import pp from '@assets/pp.jpg';
 import '@styles/introduction.css';
+import ScrollArrow from './ScrollArrow';
 
 export default function Introduction() {
   const [isMounted, setIsMounted] = useState(false);
@@ -29,6 +29,10 @@ export default function Introduction() {
       <p className="text-xl md:text-2xl font-semibold">
         I'm a Full Stack Developer
       </p>
+      <br />
+      <br />
+      <br />
+      <ScrollArrow targetId="about" />
     </div>
   );
 }
