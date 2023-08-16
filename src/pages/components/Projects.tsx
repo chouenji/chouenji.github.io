@@ -37,163 +37,163 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="section min-h-screen flex flex-col items-center justify-center mt-10">
-      <div
-        id="projects"
-        ref={projectsRef}
-        className={`text-center h-screen ${isMounted ? 'slide-in' : ''}`}
-      >
-        <h1 className="text-4xl font-bold mb-6">Projects</h1>
-        <p>Here are some of my projects</p>
-        <div className="project p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
-          <Carousel
+    <div
+      id="projects"
+      ref={projectsRef}
+      className={`section text-center min-h-screen ${
+        isMounted ? 'slide-in' : ''
+      }`}
+    >
+      <h1 className="text-3xl font-bold mb-4 mt-40">Projects</h1>
+      <p>Here are some of my projects</p>
+      <div className="project p-6 rounded-lg shadow-md">
+        <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
+        <Carousel
+          width={1000}
+          ariaLabel="FriendFinder"
+          showStatus={false}
+          showThumbs={false}
+          className="mt-8 flex justify-center"
+          emulateTouch
+          autoPlay
+          infiniteLoop
+          showArrows
+          interval={2000}
+          transitionTime={500}
+        >
+          <Image
+            className="mb-4 border-2 border-black"
+            src={profile1}
+            alt="FriendFinder"
+          />
+          <Image
+            className="mb-4 border-2 border-black"
+            src={profile1b}
+            alt="FriendFinder"
+          />
+          <Image
+            className="mb-4 border-2 border-black"
+            src={project1c}
+            alt="FriendFinder"
+          />
+        </Carousel>
+        <p>
+          FriendFinder is a full-stack application that helps you find a friend.
+          It uses Node.js and Express.js for the backend and Tailwind for the
+          frontend.
+        </p>
+        <Link
+          target="_blank"
+          className="text-lg text-orange-400 hover:text-orange-300"
+          href="https://github.com/chouenji/FriendFinder"
+        >
+          View on Github
+        </Link>
+      </div>
+      <div className="project  bg-white p-6 rounded-lg shadow-md">
+        <h3 className="text-xl font-bold mb-2">Pet Prodigy</h3>
+        <Carousel
+          width={1000}
+          ariaLabel="FriendFinder"
+          showStatus={false}
+          showThumbs={false}
+          className="mt-8 flex justify-center"
+          emulateTouch
+          autoPlay
+          infiniteLoop
+          showArrows
+          interval={2000}
+          transitionTime={500}
+        >
+          <Image
             width={1000}
-            ariaLabel="FriendFinder"
-            showStatus={false}
-            showThumbs={false}
-            className="mt-8 flex justify-center"
-            emulateTouch
-            autoPlay
-            infiniteLoop
-            showArrows
-            interval={2000}
-            transitionTime={500}
-          >
-            <Image
-              className="mb-4 border-2 border-black"
-              src={profile1}
-              alt="FriendFinder"
-            />
-            <Image
-              className="mb-4 border-2 border-black"
-              src={profile1b}
-              alt="FriendFinder"
-            />
-            <Image
-              className="mb-4 border-2 border-black"
-              src={project1c}
-              alt="FriendFinder"
-            />
-          </Carousel>
-          <p>
-            FriendFinder is a full-stack application that helps you find a
-            friend. It uses Node.js and Express.js for the backend and Tailwind
-            for the frontend.
-          </p>
-          <Link
-            target="_blank"
-            className="text-lg text-orange-400 hover:text-orange-300"
-            href="https://github.com/chouenji/FriendFinder"
-          >
-            View on Github
-          </Link>
-        </div>
-        <div className="project  bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold mb-2">Pet Prodigy</h3>
-          <Carousel
+            className="mx-auto mb-4 border-2 border-black"
+            src={profile2}
+            alt="Pet Prodigy"
+          />
+          <Image
             width={1000}
-            ariaLabel="FriendFinder"
-            showStatus={false}
-            showThumbs={false}
-            className="mt-8 flex justify-center"
-            emulateTouch
-            autoPlay
-            infiniteLoop
-            showArrows
-            interval={2000}
-            transitionTime={500}
-          >
-            <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
-              src={profile2}
-              alt="Pet Prodigy"
-            />
-            <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
-              src={profile2b}
-              alt="Pet Prodigy"
-            />
-            <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
-              src={project2c}
-              alt="Pet Prodigy"
-            />
-          </Carousel>
-          <p>
-            Pet Prodigy is a full-stack application that helps you find a pet.
-          </p>
-          <Link
-            target="_blank"
-            className="text-xl mr-4 text-orange-400 hover:text-orange-300"
-            href="https://pet-prodigy-production.up.railway.app/"
-          >
-            View Live
-          </Link>
-          <Link
-            target="_blank"
-            className="text-xl text-orange-400 hover:text-orange-300"
-            href="https://github.com/CTP-team-meeter/pet-prodigy"
-          >
-            View on Github
-          </Link>
-        </div>
-        <div className="project bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold mb-2">e-Study</h3>
-          <Carousel
+            className="mx-auto mb-4 border-2 border-black"
+            src={profile2b}
+            alt="Pet Prodigy"
+          />
+          <Image
             width={1000}
-            ariaLabel="FriendFinder"
-            showStatus={false}
-            showThumbs={false}
-            className="mt-8 flex justify-center"
-            emulateTouch
-            autoPlay
-            infiniteLoop
-            showArrows
-            interval={2000}
-            transitionTime={500}
-          >
-            <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
-              src={profile3}
-              alt="e-Study"
-            />
-            <Image
-              width={1000}
-              className=" mx-auto mb-4 border-2 border-black"
-              src={profile3b}
-              alt="e-Study"
-            />
-            <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
-              src={project3c}
-              alt="e-Study"
-            />
-          </Carousel>
-          <p className="">
-            e-Study is a full-stack application inspired by Kahoot that helps
-            you study with other users.
-          </p>
-          <Link
-            target="_blank"
-            href="https://e-study-production.up.railway.app"
-            className="text-xl text-orange-400 hover:text-orange-300 mr-4"
-          >
-            View Live
-          </Link>
-          <Link
-            target="_blank"
-            className="text-xl text-orange-400 hover:text-orange-300"
-            href="https://github.com/chouenji/estudy"
-          >
-            View on Github
-          </Link>
-        </div>
+            className="mx-auto mb-4 border-2 border-black"
+            src={project2c}
+            alt="Pet Prodigy"
+          />
+        </Carousel>
+        <p>
+          Pet Prodigy is a full-stack application that helps you find a pet.
+        </p>
+        <Link
+          target="_blank"
+          className="text-xl mr-4 text-orange-400 hover:text-orange-300"
+          href="https://pet-prodigy-production.up.railway.app/"
+        >
+          View Live
+        </Link>
+        <Link
+          target="_blank"
+          className="text-xl text-orange-400 hover:text-orange-300"
+          href="https://github.com/CTP-team-meeter/pet-prodigy"
+        >
+          View on Github
+        </Link>
+      </div>
+      <div className="project bg-white p-6 rounded-lg shadow-md">
+        <h3 className="text-xl font-bold mb-2">e-Study</h3>
+        <Carousel
+          width={1000}
+          ariaLabel="FriendFinder"
+          showStatus={false}
+          showThumbs={false}
+          className="mt-8 flex justify-center"
+          emulateTouch
+          autoPlay
+          infiniteLoop
+          showArrows
+          interval={2000}
+          transitionTime={500}
+        >
+          <Image
+            width={1000}
+            className="mx-auto mb-4 border-2 border-black"
+            src={profile3}
+            alt="e-Study"
+          />
+          <Image
+            width={1000}
+            className=" mx-auto mb-4 border-2 border-black"
+            src={profile3b}
+            alt="e-Study"
+          />
+          <Image
+            width={1000}
+            className="mx-auto mb-4 border-2 border-black"
+            src={project3c}
+            alt="e-Study"
+          />
+        </Carousel>
+        <p className="">
+          e-Study is a full-stack application inspired by Kahoot that helps you
+          study with other users.
+        </p>
+        <Link
+          target="_blank"
+          href="https://e-study-production.up.railway.app"
+          className="text-xl text-orange-400 hover:text-orange-300 mr-4"
+        >
+          View Live
+        </Link>
+        <Link
+          target="_blank"
+          className="text-xl text-orange-400 hover:text-orange-300"
+          href="https://github.com/chouenji/estudy"
+        >
+          View on Github
+        </Link>
       </div>
     </div>
   );

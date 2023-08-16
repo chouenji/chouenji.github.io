@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Image } from '@nextui-org/react';
 import grad from '@assets/grad.png';
-import '@styles/about.css';
 
 export default function About() {
   const [isMounted, setIsMounted] = useState(false);
@@ -32,15 +31,13 @@ export default function About() {
     >
       <div
         ref={aboutRef}
-        className={`w-10/12 mx-auto text-center ${isMounted ? 'slide-in' : ''}`}
+        className={`mx-auto text-center ${isMounted ? 'slide-in' : ''}`}
       >
         <div className="text-4xl font-bold mb-6">About Me</div>
-        <div className="flex flex-col lg:flex-row items-center text-justify">
-          <Image
-            className="responsive-image border-white border-2 mb-4 mx-auto"
-            src={grad}
-          />
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl md:ml-3 ml-0 mb-3 text-left md:text-justify">
+        <div className="flex flex-col items-center text-justify">
+          <Image className="w-96 mx-auto" src={grad} />
+          <br />
+          <p className="w-10/12 sm:text-sm md:text-base lg:text-lg xl:text-xl md:ml-3 ml-0 mb-3 text-left md:text-justify">
             I earned a Bachelor's degree in Computer Science from Brooklyn
             College and an Associate's degree in Information Systems from
             Kingsborough Community College. Exploring various fields, I

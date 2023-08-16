@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Image } from '@nextui-org/react';
 import pp from '@assets/pp.jpg';
 import '@styles/introduction.css';
 
@@ -17,7 +18,7 @@ export default function Introduction() {
       }`}
     >
       <img
-        className="w-64 h-64 rounded-full border-black border-2"
+        className="w-64 h-64 rounded-full border-black border-3"
         src={pp}
         alt="Profile"
       />
