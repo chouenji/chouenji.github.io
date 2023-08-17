@@ -11,7 +11,7 @@ import {
   Button,
 } from '@nextui-org/react';
 import { Avatar } from '@nextui-org/react';
-import port from '@assets/brazil.png';
+import eng from '@assets/england.png';
 
 export default function DisplayNavbar({
   secondaryLayoutUrl,
@@ -21,7 +21,7 @@ export default function DisplayNavbar({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
 
-  const menuItems = ['Home', 'About', 'Projects'];
+  const menuItems = ['Início', 'Sobre', 'Projetos'];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -71,7 +71,7 @@ export default function DisplayNavbar({
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
         />
       </NavbarContent>
 
@@ -81,7 +81,7 @@ export default function DisplayNavbar({
             color={activeSection === 'home' ? 'warning' : 'foreground'}
             href="#home"
           >
-            Home
+            Início
           </Link>
         </NavbarBrand>
         <NavbarItem>
@@ -89,7 +89,7 @@ export default function DisplayNavbar({
             color={activeSection === 'about' ? 'warning' : 'foreground'}
             href="#about"
           >
-            About
+            Sobre
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -97,7 +97,7 @@ export default function DisplayNavbar({
             color={activeSection === 'projects' ? 'warning' : 'foreground'}
             href="#projects"
           >
-            Projects
+            Projetos
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -127,9 +127,9 @@ export default function DisplayNavbar({
           <Avatar
             className="cursor-pointer hover:opacity-80"
             isBordered
-            color="success"
-            src={port}
-            alt="Portuguese"
+            color="danger"
+            src={eng}
+            alt="Português"
             onClick={redirectToSecondaryLayout}
           />
         </NavbarItem>

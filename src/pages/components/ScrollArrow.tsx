@@ -9,7 +9,7 @@ const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetId }) => {
       const targetOffset = targetSection.getBoundingClientRect().top;
       const initialOffset = window.pageYOffset;
       const startTime = performance.now();
-      const duration = 800; // Adjust the duration as needed
+      const duration = 500;
 
       const smoothScroll = (timestamp: number) => {
         const elapsed = timestamp - startTime;

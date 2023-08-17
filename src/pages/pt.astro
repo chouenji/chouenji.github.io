@@ -1,0 +1,17 @@
+---
+import Main from "@layouts/Main.astro";
+import DisplayNavbar from "./components/NavbarPT";
+import Introduction from "./components/IntroductionPT";
+import About from "./components/AboutPT";
+import Projects from "./components/ProjectsPT";
+import global from '@styles/global.css?inline'
+
+---
+
+<Main styles={global} title="Home">
+	<DisplayNavbar secondaryLayoutUrl="/" client:load />
+	<Introduction client:load />
+	<About client:visible />
+	<Projects client:visible/>
+</Main>
+

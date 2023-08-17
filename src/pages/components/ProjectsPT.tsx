@@ -13,7 +13,7 @@ import profile3 from '@assets/project3.png';
 import profile3b from '@assets/project3b.png';
 import project3c from '@assets/project3c.png';
 
-export default function Projects() {
+export default function Projetos() {
   const [isMounted, setIsMounted] = useState(false);
 
   const projectsRef = useRef(null);
@@ -42,7 +42,7 @@ export default function Projects() {
       ref={projectsRef}
       className={`section bg-white min-h-screen ${isMounted ? 'slide-in' : ''}`}
     >
-      <h1 className="text-4xl text-center font-bold mb-6">Projects</h1>
+      <h1 className="text-4xl text-center font-bold mb-6">Projetos</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
         <div className="project p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
@@ -76,11 +76,11 @@ export default function Projects() {
             />
           </Carousel>
           <p>
-            FriendFinder is a full-stack application that helps you find a
-            friend.
+            FriendFinder é uma aplicação full-stack que ajuda você a encontrar
+            um amigo.
           </p>
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
-            Technologies
+            Tecnologias
           </h2>
           <br />
           <ul className="flex flex-wrap justify-center list-disc gap-2">
@@ -98,7 +98,7 @@ export default function Projects() {
               className="text-xl text-orange-400 hover:text-orange-300"
               href="https://github.com/chouenji/FriendFinder"
             >
-              View on Github
+              Ver no Github
             </Link>
           </div>
         </div>
@@ -137,10 +137,11 @@ export default function Projects() {
             />
           </Carousel>
           <p>
-            Pet Prodigy is a full-stack application that helps you find a pet.
+            Pet Prodigy é uma aplicação full-stack que ajuda você a encontrar um
+            animal de estimação.
           </p>
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
-            Technologies
+            Tecnologias
           </h2>
           <ul className="flex flex-wrap justify-center list-disc gap-2 mt-4">
             <li className="mr-6">React</li>
@@ -157,7 +158,7 @@ export default function Projects() {
               className="text-xl mr-4 text-orange-400 hover:text-orange-300"
               href="https://pet-prodigy-production.up.railway.app/"
             >
-              View Live
+              Ver Ao Vivo
             </Link>
 
             <Link
@@ -165,7 +166,7 @@ export default function Projects() {
               className="text-xl text-orange-400 hover:text-orange-300"
               href="https://github.com/CTP-team-meeter/pet-prodigy"
             >
-              View on Github
+              Ver no Github
             </Link>
           </div>
         </div>
@@ -204,11 +205,11 @@ export default function Projects() {
             />
           </Carousel>
           <p>
-            e-Study is a full-stack application inspired by Kahoot that helps
-            you study with other users.
+            e-Study é uma aplicação full-stack inspirada no Kahoot que ajuda
+            você a estudar com outros usuários.
           </p>
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
-            Technologies
+            Tecnologias
           </h2>
 
           <ul className="flex flex-wrap justify-center list-disc gap-2 mt-4">
@@ -226,7 +227,7 @@ export default function Projects() {
               href="https://e-study-production.up.railway.app"
               className="text-xl text-orange-400 hover:text-orange-300 mr-4"
             >
-              View Live
+              Ver Ao Vivo
             </Link>
 
             <Link
@@ -234,7 +235,7 @@ export default function Projects() {
               className="text-xl text-orange-400 hover:text-orange-300"
               href="https://github.com/chouenji/estudy"
             >
-              View on Github
+              Ver no Github
             </Link>
           </div>
         </div>

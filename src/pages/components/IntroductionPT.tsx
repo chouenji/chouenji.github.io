@@ -13,21 +13,21 @@ export default function Introduction() {
   return (
     <div
       id="home"
-      className={`section flex flex-col items-center justify-center gap-4 min-h-screen max-h-screen ${
+      className={`section flex flex-col items-center justify-center gap-4 h-screen ${
         isMounted ? 'slide-in active' : 'slide-in'
       }`}
     >
       <img
         className="w-64 h-64 rounded-full border-black border-3"
         src={pp}
-        alt="Profile"
+        alt="Perfil"
       />
       <h1 className="text-2xl md:text-2xl lg:text-xl xl:text-4xl font-bold">
-        Hello, I'm Kevin do Canto
+        Olá eu sou Kevin do Canto
       </h1>
 
       <p className="text-xl md:text-2xl font-semibold">
-        I'm a Full Stack Developer
+        Sou um Desenvolvedor Full Stack
       </p>
       <br />
       <br />

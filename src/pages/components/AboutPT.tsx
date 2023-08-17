@@ -3,7 +3,7 @@ import { Image } from '@nextui-org/react';
 import grad from '@assets/grad.png';
 import ScrollArrow from './ScrollArrow';
 
-export default function About() {
+export default function Sobre() {
   const [isMounted, setIsMounted] = useState(false);
   const aboutRef = useRef(null);
 
@@ -34,20 +34,20 @@ export default function About() {
         ref={aboutRef}
         className={`mx-auto text-center mb-10 ${isMounted ? 'slide-in' : ''}`}
       >
-        <h1 className="text-4xl font-bold mb-10">About Me</h1>
+        <h1 className="text-4xl font-bold mb-10">Sobre Mim</h1>
         <div className="w-9/12 flex flex-col lg:flex-row items-center justify-center mx-auto">
           <Image className="xl:w-6/12 w-10/12 md:w-6/12 mx-auto" src={grad} />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
-              Graduated with a Bachelor's degree in Computer Science from
-              Brooklyn College and earned an Associate's degree in Information
-              Systems from Kingsborough Community College.
+              Formado com graduação em Ciência da Computação pelo Brooklyn
+              College e obtive um diploma de associado em Sistemas de Informação
+              pelo Kingsborough Community College.
             </p>
             <br />
             <p className="md:text-lg text-sm text-justify">
-              Passionate about creating web applications that are both
-              innovative and visually appealing. Currently looking for full-time
-              opportunities as a software engineer.
+              Apaixonado por criar aplicações web que sejam inovadoras e
+              visualmente atraentes. Atualmente em busca de oportunidades
+              full-time como engenheiro de software.
             </p>
           </div>
         </div>
