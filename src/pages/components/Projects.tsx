@@ -44,7 +44,7 @@ export default function Projects() {
     >
       <h1 className="text-4xl text-center font-bold mb-6">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-        <div className="project p-6 rounded-lg shadow-md">
+        <div className="project p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
           <Carousel
             width={1000}
@@ -82,8 +82,7 @@ export default function Projects() {
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
             Technologies
           </h2>
-          <br />
-          <ul className="flex flex-wrap justify-center list-disc gap-2">
+          <ul className="flex flex-wrap justify-center list-disc gap-2 mt-4">
             <li className="mr-6">React</li>
             <li className="mr-6">TypeScript</li>
             <li className="mr-6">Tailwind</li>
@@ -92,11 +91,11 @@ export default function Projects() {
             <li className="mr-6">PostgreSQL</li>
           </ul>
           <br />
-          <div className="w-full text-center">
+          <div className="w-full text-center h-10">
             <Button
               as={Link}
               target="_blank"
-              className="md:text-xl text-lg mr-3"
+              className="md:text-xl text-lg mt-3 mr-3"
               variant="flat"
               href="https://github.com/chouenji/FriendFinder"
             >
@@ -139,7 +138,8 @@ export default function Projects() {
             />
           </Carousel>
           <p>
-            Pet Prodigy is a full-stack application that helps you find a pet.
+            Pet Prodigy is a full-stack application that helps you find a pet
+            and discover nearby pet stores.
           </p>
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
             Technologies
@@ -153,7 +153,7 @@ export default function Projects() {
             <li className="mr-6">MongoDB</li>
           </ul>
           <br />
-          <div className="w-full text-center">
+          <div className="w-full text-center h-10">
             <Button
               as={Link}
               target="_blank"

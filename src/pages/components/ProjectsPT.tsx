@@ -47,7 +47,6 @@ export default function Projetos() {
         <div className="project p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
           <Carousel
-            width={1000}
             ariaLabel="FriendFinder"
             showStatus={false}
             showThumbs={false}
@@ -82,8 +81,7 @@ export default function Projetos() {
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
             Tecnologias
           </h2>
-          <br />
-          <ul className="flex flex-wrap justify-center list-disc gap-2">
+          <ul className="flex flex-wrap justify-center list-disc gap-2 mt-4">
             <li className="mr-6">React</li>
             <li className="mr-6">TypeScript</li>
             <li className="mr-6">Tailwind</li>
@@ -97,7 +95,7 @@ export default function Projetos() {
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
+              className="md:text-xl text-lg mt-3 mr-3"
               href="https://github.com/chouenji/FriendFinder"
             >
               Ver no Github
@@ -107,7 +105,6 @@ export default function Projetos() {
         <div className="project bg-white p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">Pet Prodigy</h3>
           <Carousel
-            width={1000}
             ariaLabel="FriendFinder"
             showStatus={false}
             showThumbs={false}
@@ -120,20 +117,17 @@ export default function Projetos() {
             transitionTime={500}
           >
             <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
+              className="mb-4 border-2 border-black"
               src={profile2}
               alt="Pet Prodigy"
             />
             <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
+              className="mb-4 border-2 border-black"
               src={profile2b}
               alt="Pet Prodigy"
             />
             <Image
-              width={1000}
-              className="mx-auto mb-4 border-2 border-black"
+              className=" mb-4 border-2 border-black"
               src={project2c}
               alt="Pet Prodigy"
             />
@@ -179,7 +173,6 @@ export default function Projetos() {
         <div className="project bg-white p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">e-Study</h3>
           <Carousel
-            width={1000}
             ariaLabel="FriendFinder"
             showStatus={false}
             showThumbs={false}
@@ -192,19 +185,16 @@ export default function Projetos() {
             transitionTime={500}
           >
             <Image
-              width={1000}
               className="mx-auto mb-4 border-2 border-black"
               src={profile3}
               alt="e-Study"
             />
             <Image
-              width={1000}
               className=" mx-auto mb-4 border-2 border-black"
               src={profile3b}
               alt="e-Study"
             />
             <Image
-              width={1000}
               className="mx-auto mb-4 border-2 border-black"
               src={project3c}
               alt="e-Study"
