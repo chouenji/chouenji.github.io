@@ -27,7 +27,7 @@ export default function Sobre() {
 
   return (
     <div
-      id="about"
+      id="sobre"
       className="section bg-black text-white min-h-screen flex flex-col items-center justify-center"
     >
       <div

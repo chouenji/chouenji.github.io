@@ -38,7 +38,7 @@ export default function Projetos() {
 
   return (
     <div
-      id="projects"
+      id="projetos"
       ref={projectsRef}
       className={`section bg-white min-h-screen ${isMounted ? 'slide-in' : ''}`}
     >

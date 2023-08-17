@@ -78,24 +78,24 @@ export default function DisplayNavbar({
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
           <Link
-            color={activeSection === 'home' ? 'warning' : 'foreground'}
-            href="#home"
+            color={activeSection === 'Início' ? 'warning' : 'foreground'}
+            href="#início"
           >
             Início
           </Link>
         </NavbarBrand>
         <NavbarItem>
           <Link
-            color={activeSection === 'about' ? 'warning' : 'foreground'}
-            href="#about"
+            color={activeSection === 'Sobre' ? 'warning' : 'foreground'}
+            href="#sobre"
           >
             Sobre
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            color={activeSection === 'projects' ? 'warning' : 'foreground'}
-            href="#projects"
+            color={activeSection === 'Projetos' ? 'warning' : 'foreground'}
+            href="#projetos"
           >
             Projetos
           </Link>

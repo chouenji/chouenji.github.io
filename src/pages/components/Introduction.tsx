@@ -12,7 +12,7 @@ export default function Introduction() {
 
   return (
     <div
-      id="home"
+      id="início"
       className={`section flex flex-col items-center justify-center gap-4 min-h-screen max-h-screen ${
         isMounted ? 'slide-in active' : 'slide-in'
       }`}
