@@ -12,7 +12,7 @@ export default function Introduction() {
 
   return (
     <div
-      id="home"
+      id="início"
       className={`section flex flex-col items-center justify-center gap-4 h-screen ${
         isMounted ? 'slide-in active' : 'slide-in'
       }`}
@@ -32,7 +32,7 @@ export default function Introduction() {
       <br />
       <br />
       <br />
-      <ScrollArrow targetId="about" />
+      <ScrollArrow targetId="sobre" />
     </div>
   );
 }

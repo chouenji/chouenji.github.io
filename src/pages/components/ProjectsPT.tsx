@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Image, Link } from '@nextui-org/react';
+import { Button, Image, Link } from '@nextui-org/react';
 
 import profile1 from '@assets/project1.png';
 import profile1b from '@assets/project1b.png';
@@ -93,13 +93,15 @@ export default function Projetos() {
           </ul>
           <br />
           <div className="w-full text-center">
-            <Link
+            <Button
+              as={Link}
               target="_blank"
-              className="text-xl text-orange-400 hover:text-orange-300"
+              variant="flat"
+              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
               href="https://github.com/chouenji/FriendFinder"
             >
               Ver no Github
-            </Link>
+            </Button>
           </div>
         </div>
         <div className="project bg-white p-6 rounded-lg shadow-md border-t-2">
@@ -153,21 +155,25 @@ export default function Projetos() {
           </ul>
           <br />
           <div className="w-full text-center">
-            <Link
+            <Button
+              as={Link}
               target="_blank"
-              className="text-xl mr-4 text-orange-400 hover:text-orange-300"
+              variant="flat"
+              className="md:text-xl text-lg mr-3"
               href="https://pet-prodigy-production.up.railway.app/"
             >
               Ver Ao Vivo
-            </Link>
+            </Button>
 
-            <Link
+            <Button
+              as={Link}
               target="_blank"
-              className="text-xl text-orange-400 hover:text-orange-300"
+              variant="flat"
+              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
               href="https://github.com/CTP-team-meeter/pet-prodigy"
             >
               Ver no Github
-            </Link>
+            </Button>
           </div>
         </div>
         <div className="project bg-white p-6 rounded-lg shadow-md border-t-2">
@@ -222,21 +228,25 @@ export default function Projetos() {
           </ul>
           <br />
           <div className="w-full text-center">
-            <Link
+            <Button
+              as={Link}
               target="_blank"
+              variant="flat"
               href="https://e-study-production.up.railway.app"
-              className="text-xl text-orange-400 hover:text-orange-300 mr-4"
+              className="md:text-xl text-lg mr-3"
             >
               Ver Ao Vivo
-            </Link>
+            </Button>
 
-            <Link
+            <Button
+              as={Link}
               target="_blank"
-              className="text-xl text-orange-400 hover:text-orange-300"
+              variant="flat"
+              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
               href="https://github.com/chouenji/estudy"
             >
               Ver no Github
-            </Link>
+            </Button>
           </div>
         </div>
       </div>

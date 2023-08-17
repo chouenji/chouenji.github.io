@@ -52,7 +52,7 @@ export default function Sobre() {
           </div>
         </div>
       </div>
-      <ScrollArrow targetId="projects" />
+      <ScrollArrow targetId="projetos" />
     </div>
   );
 }
