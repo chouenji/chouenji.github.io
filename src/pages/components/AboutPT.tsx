@@ -45,9 +45,10 @@ export default function Sobre() {
             </p>
             <br />
             <p className="md:text-lg text-sm text-justify">
-              Minha trajetória acadêmica inclui uma graduação em Ciência da
-              Computação pelo Brooklyn College e um diploma de associado em
-              Sistemas de Informação pelo Kingsborough Community College.
+              Minha trajetória acadêmica inclui uma graduação de Bacharel em
+              Ciência da Computação pelo Brooklyn College e um diploma de
+              Tecnólogo em Sistemas de Informação pelo Kingsborough Community
+              College.
             </p>
           </div>
         </div>
