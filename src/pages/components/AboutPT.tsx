@@ -39,16 +39,19 @@ export default function Sobre() {
           <Image className="xl:w-6/12 w-10/12 md:w-6/12 mx-auto" src={grad} />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
-              Apaixonado por criar aplicações web inovadoras e visualmente
-              atrativas. Atualmente à procura de oportunidades em tempo integral
-              como engenheiro de software.
+              Graduado em Ciência da Computação pelo Brooklyn College, minha
+              jornada acadêmica envolveu explorar diversos assuntos relevantes,
+              como algoritmos, estruturas de dados, linguagens de programação e
+              metodologias de desenvolvimento de software. Esses estudos
+              aprimoraram habilidades como pensamento crítico e comunicação
+              eficaz.
             </p>
             <br />
             <p className="md:text-lg text-sm text-justify">
-              Minha trajetória acadêmica inclui uma graduação de Bacharel em
-              Ciência da Computação pelo Brooklyn College e um diploma de
-              Tecnólogo em Sistemas de Informação pelo Kingsborough Community
-              College.
+              Nessa jornada, estou emocionado em anunciar minha busca ativa por
+              cargos como Engenheiro de Software. Prosperando em resolução de
+              problemas e inovação, estou ansioso para contribuir com minhas
+              habilidades para uma equipe dinâmica.
             </p>
           </div>
         </div>
