@@ -39,15 +39,15 @@ export default function Sobre() {
           <Image className="xl:w-6/12 w-10/12 md:w-6/12 mx-auto" src={grad} />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
-              Formado com graduação em Ciência da Computação pelo Brooklyn
-              College e obtive um diploma de associado em Sistemas de Informação
-              pelo Kingsborough Community College.
+              Apaixonado por criar aplicações web inovadoras e visualmente
+              atrativas. Atualmente à procura de oportunidades em tempo integral
+              como engenheiro de software.
             </p>
             <br />
             <p className="md:text-lg text-sm text-justify">
-              Apaixonado por criar aplicações web que sejam inovadoras e
-              visualmente atraentes. Atualmente em busca de oportunidades
-              full-time como engenheiro de software.
+              Minha trajetória acadêmica inclui uma graduação em Ciência da
+              Computação pelo Brooklyn College e um diploma de associado em
+              Sistemas de Informação pelo Kingsborough Community College.
             </p>
           </div>
         </div>
