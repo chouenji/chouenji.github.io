@@ -23,7 +23,7 @@ export default function Introduction() {
         alt="Perfil"
       />
       <h1 className="text-2xl md:text-2xl lg:text-xl xl:text-4xl font-bold">
-        Olá eu sou Kevin do Canto
+        Olá, eu sou Kevin do Canto
       </h1>
 
       <p className="text-xl md:text-2xl font-semibold">
