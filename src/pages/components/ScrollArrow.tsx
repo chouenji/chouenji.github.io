@@ -30,12 +30,16 @@ const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetId }) => {
 
   return (
     <div
-      className="scroll-arrow hover:scale-110 hover:text-lg hover:-translate-y-1 cursor-pointer"
+      className="scroll-arrow hover:scale-110 hover:text-lg hover:-translate-y-1 cursor-pointer transition ease-in delay-150"
       onClick={scrollSmoothly}
     >
-      <span className="text-lg transition font-semibold">Scroll</span>
-      <br />
-      <i className="fas fa-chevron-down transition ml-2 text-3xl"></i>
+      <span className="text-lg transition font-semibold w-full text-center">
+        Click to Scroll
+      </span>
+      <div className="mt-2 flex justify-center items-center rounded-full text-black bg-white border-black border-4  w-16 h-16 mx-auto text-2xl">
+        <i className="fas fa-chevron-down transition"></i>
+        <br />
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import pp from '@assets/pp.jpg';
 import '@styles/introduction.css';
 import ScrollArrow from './ScrollArrow';
+import { Image } from '@nextui-org/react';
 
 export default function Introduction() {
   const [isMounted, setIsMounted] = useState(false);
@@ -17,7 +18,7 @@ export default function Introduction() {
         isMounted ? 'slide-in active' : 'slide-in'
       }`}
     >
-      <img
+      <Image
         className="w-64 h-64 rounded-full border-black border-3"
         src={pp}
         alt="Profile"

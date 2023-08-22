@@ -36,7 +36,7 @@ export default function About() {
       >
         <h1 className="text-4xl font-bold mb-10">About Me</h1>
         <div className="w-9/12 flex flex-col lg:flex-row items-center justify-center mx-auto">
-          <Image className="xl:w-6/12 w-10/12 md:w-6/12 mx-auto" src={grad} />
+          <Image className="md:w-6/12 w-8/12 mx-auto" src={grad} />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
               A graduate with a Bachelor's in Computer Science from Brooklyn
@@ -54,8 +54,8 @@ export default function About() {
             </p>
           </div>
         </div>
+        <ScrollArrow targetId="projects" />
       </div>
-      <ScrollArrow targetId="projects" />
     </div>
   );
 }
