@@ -64,7 +64,7 @@ export default function DisplayNavbar({
 
   return (
     <Navbar
-      className="dark text-foreground bg-background"
+      className="dark text-foreground bg-background opacity-80"
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
