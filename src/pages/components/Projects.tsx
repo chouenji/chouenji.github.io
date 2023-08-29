@@ -119,6 +119,8 @@ export default function Projects() {
             showArrows
             interval={2000}
             transitionTime={500}
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
           >
             <Image
               width={1000}
@@ -191,6 +193,8 @@ export default function Projects() {
             showArrows
             interval={2000}
             transitionTime={500}
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
           >
             <Image
               width={1000}
