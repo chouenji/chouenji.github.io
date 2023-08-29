@@ -36,7 +36,11 @@ export default function Sobre() {
       >
         <h1 className="text-4xl font-bold mb-10">Sobre Mim</h1>
         <div className="w-9/12 flex flex-col lg:flex-row items-center justify-center mx-auto">
-          <Image className="md:w-6/12 w-8/12 mx-auto" src={grad} />
+          <Image
+            className="md:w-6/12 w-8/12 mx-auto"
+            src={grad}
+            alt="Graduação"
+          />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
               Graduado em Ciência da Computação pelo Brooklyn College, minha

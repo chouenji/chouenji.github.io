@@ -57,6 +57,8 @@ export default function Projetos() {
             showArrows
             interval={2000}
             transitionTime={500}
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
           >
             <Image
               className="mb-4 border-2 border-black"

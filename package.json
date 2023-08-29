@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
+    "@formspree/react": "^2.5.1",
     "@nextui-org/react": "^2.0.18",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
