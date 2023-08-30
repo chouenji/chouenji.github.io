@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import pp from '@assets/pp.jpg';
 import '@styles/introduction.css';
 import ScrollArrow from './ScrollArrow';
+import { Button, Link } from '@nextui-org/react';
 
 export default function Introduction() {
   const [isMounted, setIsMounted] = useState(false);
@@ -29,7 +30,13 @@ export default function Introduction() {
       <p className="text-xl md:text-2xl font-semibold">
         Sou um Desenvolvedor Full Stack
       </p>
-      <br />
+      <Button
+        as={Link}
+        href="mailto:kevin.docanto460@gmail.com"
+        className="text-2xl bg-black text-white mt-4 font-semibold"
+      >
+        Contate-me
+      </Button>
       <br />
       <br />
       <ScrollArrow targetId="sobre" />
