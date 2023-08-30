@@ -33,12 +33,11 @@ export default function Introduction() {
       <Button
         as={Link}
         href="mailto:kevin.docanto460@gmail.com"
-        className="text-2xl bg-black text-white mt-4 font-semibold"
+        className="text-2xl p-6 bg-black text-white mt-4 mb-4 font-semibold"
+        variant="flat"
       >
         Contact Me
       </Button>
-      <br />
-      <br />
       <ScrollArrow targetId="about" />
     </div>
   );

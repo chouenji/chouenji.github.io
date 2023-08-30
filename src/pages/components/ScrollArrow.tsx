@@ -30,7 +30,7 @@ const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetId }) => {
 
   return (
     <div
-      className="scroll-arrow hover:scale-110 hover:text-lg hover:-translate-y-1 cursor-pointer transition ease-in delay-150"
+      className="scroll-arrow pulsate hover:scale-110 hover:text-lg hover:-translate-y-1 cursor-pointer transition ease-in delay-150"
       onClick={scrollSmoothly}
     >
       <span className="text-lg transition font-semibold w-full text-center">
