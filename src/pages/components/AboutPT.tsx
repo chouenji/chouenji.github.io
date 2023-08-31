@@ -43,19 +43,20 @@ export default function Sobre() {
           />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
-              Graduado em Ciência da Computação pelo Brooklyn College, minha
-              jornada acadêmica envolveu explorar diversos assuntos relevantes,
-              como algoritmos, estruturas de dados, linguagens de programação e
-              metodologias de desenvolvimento de software. Esses estudos
-              aprimoraram habilidades como pensamento crítico e comunicação
-              eficaz.
+              Me graduei em{' '}
+              <span className="font-bold">Ciência da Computação </span>
+              pelo Brooklyn College, no qual tive a oportunidade de explorar
+              diversos assuntos na área da computação, como algoritmos,
+              estruturas de dados, linguagens de programação e metodologias de
+              desenvolvimento de software. Esses estudos aprimoraram habilidades
+              como pensamento crítico e comunicação eficaz.
             </p>
             <br />
             <p className="md:text-lg text-sm text-justify">
-              Nessa jornada, estou emocionado em anunciar minha busca ativa por
-              cargos como Engenheiro de Software. Prosperando em resolução de
-              problemas e inovação, estou ansioso para contribuir com minhas
-              habilidades para uma equipe dinâmica.
+              Obtenho quase 2 anos de experiência em desenvolvimento de
+              aplicações web. Meu objetivo é me tornar um Engenheiro de Software
+              e estou em busca de oportunidades para me desenvolver
+              profissionalmente.
             </p>
           </div>
         </div>

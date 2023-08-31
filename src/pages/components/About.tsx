@@ -39,18 +39,18 @@ export default function About() {
           <Image className="md:w-6/12 w-8/12 mx-auto" src={grad} />
           <div className="md:w-1/2 p-4 text-center mx-auto">
             <p className="md:text-lg text-sm text-justify">
-              A graduate with a Bachelor's in Computer Science from Brooklyn
-              College, my academic journey has involved exploring my academic
-              journey has involved exploring various relevant subjects such as
-              algorithms, data structures, programming languages, and software
-              development methodologies. These studies have honed skills like
-              critical thinking and effective communication.
+              I graduated in <span className="font-bold">Computer Science</span>{' '}
+              from Brooklyn College, where I had the opportunity to explore
+              various topics in the field of computing, such as algorithms, data
+              structures, programming languages, and software development
+              methodologies. These studies enhanced skills like critical
+              thinking and effective communication.
             </p>
             <br />
             <p className="md:text-lg text-sm text-justify">
-              On this journey, I'm thrilled to announce my active pursuit of
-              roles as a Software Engineer. Thriving in problem-solving and
-              innovation, I'm eager to contribute my skills to a dynamic team.
+              I have almost 2 years of experience in web application
+              development. My goal is to become a Software Engineer, and I am
+              actively seeking opportunities to further my professional growth.
             </p>
           </div>
         </div>
