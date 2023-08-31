@@ -14,7 +14,7 @@ export default function Introduction() {
   return (
     <div
       id="home"
-      className={`section flex flex-col items-center justify-center gap-4 min-h-screen max-h-screen ${
+      className={`section flex flex-col items-center mt-20 gap-2 min-h-screen  ${
         isMounted ? 'slide-in active' : 'slide-in'
       }`}
     >
