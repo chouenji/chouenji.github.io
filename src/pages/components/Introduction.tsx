@@ -38,6 +38,7 @@ export default function Introduction() {
       >
         Contact Me
       </Button>
+      <br />
       <ScrollArrow targetId="about" />
     </div>
   );
