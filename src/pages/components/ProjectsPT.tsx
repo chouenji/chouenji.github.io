@@ -250,7 +250,7 @@ export default function Projetos() {
         <div></div>
         <Link href="#início" className="justify-center items-center">
           <Button className="text-xl p-6 mb-2" variant="flat" color="success">
-            Volte ao Início
+            Voltar ao Início
           </Button>
         </Link>
       </div>

@@ -156,7 +156,7 @@ export default function DisplayNavbar({
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full"
+              className="w-full justify-center text-4xl p-4"
               color="foreground"
               href={`#${item.toLowerCase()}`}
               onClick={handleMobileMenuItemClick}
