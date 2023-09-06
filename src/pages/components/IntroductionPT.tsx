@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import pp from '@assets/pp.jpg';
 import '@styles/introduction.css';
-import ScrollArrow from './ScrollArrow';
 import { Button, Link } from '@nextui-org/react';
 
 export default function Introduction() {
@@ -39,7 +38,6 @@ export default function Introduction() {
         Contate-me
       </Button>
       <br />
-      <ScrollArrow targetId="sobre" language="pt" />
     </div>
   );
 }
