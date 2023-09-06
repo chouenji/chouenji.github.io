@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Image } from '@nextui-org/react';
 import grad from '@assets/grad.png';
-import ScrollArrow from './ScrollArrow';
 
 export default function About() {
   const [isMounted, setIsMounted] = useState(false);
@@ -54,7 +53,6 @@ export default function About() {
             </p>
           </div>
         </div>
-        <ScrollArrow targetId="projects" language="en" />
       </div>
     </div>
   );

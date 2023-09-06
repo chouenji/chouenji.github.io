@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Image } from '@nextui-org/react';
 import grad from '@assets/grad.png';
-import ScrollArrow from './ScrollArrow';
 
 export default function Sobre() {
   const [isMounted, setIsMounted] = useState(false);
@@ -60,7 +59,6 @@ export default function Sobre() {
             </p>
           </div>
         </div>
-        <ScrollArrow targetId="projetos" language="pt" />
       </div>
     </div>
   );
