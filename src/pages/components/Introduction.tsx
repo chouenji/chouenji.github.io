@@ -39,7 +39,7 @@ export default function Introduction() {
         Contact Me
       </Button>
       <br />
-      <ScrollArrow targetId="about" />
+      <ScrollArrow targetId="about" language="en" />
     </div>
   );
 }

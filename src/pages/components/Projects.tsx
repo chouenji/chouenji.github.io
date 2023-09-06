@@ -40,11 +40,13 @@ export default function Projects() {
     <div
       id="projects"
       ref={projectsRef}
-      className={`section bg-white min-h-screen ${isMounted ? 'slide-in' : ''}`}
+      className={`section bg-white min-h-screen flex flex-col items-center justify-center ${
+        isMounted ? 'slide-in' : ''
+      }`}
     >
       <h1 className="text-4xl text-center font-bold mb-6">Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-        <div className="project p-6 rounded-lg shadow-md border-t-2">
+      <div className=" w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        <div className="project xl:w-full w-[95%] mx-auto  p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
           <Carousel
             width={1000}
@@ -105,7 +107,7 @@ export default function Projects() {
             </Button>
           </div>
         </div>
-        <div className="project bg-white p-6 rounded-lg shadow-md border-t-2">
+        <div className="project xl:w-full  w-[95%] mx-auto  bg-white p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">Pet Prodigy</h3>
           <Carousel
             width={1000}
@@ -179,7 +181,7 @@ export default function Projects() {
             </Button>
           </div>
         </div>
-        <div className="project bg-white p-6 rounded-lg shadow-md border-t-2">
+        <div className="project xl:w-full w-[95%] mx-auto  bg-white p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">e-Study</h3>
           <Carousel
             width={1000}
@@ -253,6 +255,12 @@ export default function Projects() {
             </Button>
           </div>
         </div>
+        <div></div>
+        <Link href="#home" className="justify-center items-center">
+          <Button className="text-xl p-6 mb-2" variant="flat" color="success">
+            Back to Top
+          </Button>
+        </Link>
       </div>
     </div>
   );

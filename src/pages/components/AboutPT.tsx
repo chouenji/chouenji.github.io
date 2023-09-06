@@ -32,7 +32,7 @@ export default function Sobre() {
     >
       <div
         ref={aboutRef}
-        className={`mx-auto text-center mb-10 ${isMounted ? 'slide-in' : ''}`}
+        className={`mx-auto text-center ${isMounted ? 'slide-in' : ''}`}
       >
         <h1 className="text-4xl font-bold mb-10">Sobre Mim</h1>
         <div className="w-9/12 flex flex-col lg:flex-row items-center justify-center mx-auto">
@@ -60,7 +60,7 @@ export default function Sobre() {
             </p>
           </div>
         </div>
-        <ScrollArrow targetId="projetos" />
+        <ScrollArrow targetId="projetos" language="pt" />
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ export default function About() {
     >
       <div
         ref={aboutRef}
-        className={`mx-auto text-center mb-10 ${isMounted ? 'slide-in' : ''}`}
+        className={`mx-auto text-center ${isMounted ? 'slide-in' : ''}`}
       >
         <h1 className="text-4xl font-bold mb-10">About Me</h1>
         <div className="w-9/12 flex flex-col lg:flex-row items-center justify-center mx-auto">
@@ -54,7 +54,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <ScrollArrow targetId="projects" />
+        <ScrollArrow targetId="projects" language="en" />
       </div>
     </div>
   );

@@ -20,6 +20,8 @@ export default function DisplayNavbar({
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const menuItems = ['Home', 'About', 'Projects'];
 
@@ -62,9 +64,24 @@ export default function DisplayNavbar({
     window.location.href = secondaryLayoutUrl;
   }
 
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
     <Navbar
-      className="dark text-foreground bg-background opacity-80"
+      className={`dark text-foreground bg-background ${
+        visible ? 'opacity-100 transition ease-in' : 'opacity-0'
+      }`}
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
@@ -139,7 +156,7 @@ export default function DisplayNavbar({
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full"
+              className="w-full justify-center text-4xl p-4"
               color="foreground"
               href={`#${item.toLowerCase()}`}
               onClick={handleMobileMenuItemClick}

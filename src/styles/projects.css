@@ -1,7 +1,7 @@
 .carousel-image-container {
   position: relative;
-  width: 100%; /* Adjust as needed */
-  padding-bottom: 75%; /* Adjust to maintain aspect ratio (e.g., for 4:3 aspect ratio) */
+  width: 100%;
+  padding-bottom: 75%;
   overflow: hidden;
 }
 

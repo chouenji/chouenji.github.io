@@ -1,8 +1,9 @@
 interface ScrollArrowProps {
   targetId: string;
+  language: string;
 }
 
-const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetId }) => {
+const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetId, language }) => {
   const scrollSmoothly = () => {
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
@@ -34,7 +35,7 @@ const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetId }) => {
       onClick={scrollSmoothly}
     >
       <span className="text-lg transition font-semibold w-full text-center">
-        Click to Scroll
+        {language === 'en' ? 'Scroll down' : 'Role para baixo'}
       </span>
       <div className="mt-2 flex justify-center items-center rounded-full text-black bg-white border-black border-4  w-16 h-16 mx-auto text-2xl">
         <i className="fas fa-chevron-down transition"></i>
