@@ -29,6 +29,7 @@ export default function Introduction() {
       <p className="text-xl md:text-2xl font-semibold">
         Sou um Desenvolvedor Full Stack
       </p>
+
       <Button
         as={Link}
         href="mailto:kevin.docanto460@gmail.com"
