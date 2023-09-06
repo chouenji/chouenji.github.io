@@ -167,7 +167,7 @@ export default function Projects() {
               className="md:text-xl text-lg mr-3"
               href="https://pet-prodigy-production.up.railway.app/"
             >
-              View Live
+              View Demo
             </Button>
 
             <Button
@@ -242,7 +242,7 @@ export default function Projects() {
               className="md:text-xl text-lg mr-3"
               href="https://e-study-production.up.railway.app"
             >
-              View Live
+              View Demo
             </Button>
             <Button
               as={Link}

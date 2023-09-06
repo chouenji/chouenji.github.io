@@ -162,7 +162,7 @@ export default function Projetos() {
               className="md:text-xl text-lg mr-3"
               href="https://pet-prodigy-production.up.railway.app/"
             >
-              Ver Ao Vivo
+              Ver Demo
             </Button>
 
             <Button
@@ -233,7 +233,7 @@ export default function Projetos() {
               href="https://e-study-production.up.railway.app"
               className="md:text-xl text-lg mr-3"
             >
-              Ver Ao Vivo
+              Ver Demo
             </Button>
 
             <Button
