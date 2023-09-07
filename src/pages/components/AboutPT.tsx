@@ -34,14 +34,14 @@ export default function Sobre() {
         className={`mx-auto text-center ${isMounted ? 'slide-in' : ''}`}
       >
         <h1 className="text-4xl font-bold mb-10">Sobre Mim</h1>
-        <div className="w-9/12 flex flex-col lg:flex-row items-center justify-center mx-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-center mx-auto p-10 gap-4">
           <Image
-            className="md:w-6/12 w-8/12 mx-auto"
+            className="lg:w-full md:w-6/12 w-[300px] mx-auto"
             src={grad}
             alt="Graduação"
           />
-          <div className="md:w-1/2 p-4 text-center mx-auto">
-            <p className="md:text-lg text-sm text-justify">
+          <div className="flex flex-col justify-between gap-x-4 text-center mx-auto">
+            <p className="xl:text-xl w-full text-sm text-justify">
               Me graduei em{' '}
               <span className="font-bold">Ciência da Computação </span>
               pelo Brooklyn College, no qual tive a oportunidade de explorar
@@ -51,7 +51,7 @@ export default function Sobre() {
               como pensamento crítico e comunicação eficaz.
             </p>
             <br />
-            <p className="md:text-lg text-sm text-justify">
+            <p className="xl:text-xl text-sm text-justify">
               Obtenho quase 2 anos de experiência em desenvolvimento de
               aplicações web. Meu objetivo é me tornar um Engenheiro de Software
               e estou em busca de oportunidades para me desenvolver

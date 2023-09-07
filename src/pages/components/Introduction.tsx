@@ -13,12 +13,12 @@ export default function Introduction() {
   return (
     <div
       id="home"
-      className={`section flex flex-col items-center mt-20 gap-2 min-h-screen  ${
+      className={`section flex flex-col items-center justify-center gap-2 min-h-screen  ${
         isMounted ? 'slide-in active' : 'slide-in'
       }`}
     >
       <Image
-        className="w-64 h-64 rounded-full border-black border-3"
+        className="w-72 h-72 rounded-full border-black border-4"
         src={pp}
         alt="Profile"
       />

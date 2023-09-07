@@ -46,7 +46,7 @@ export default function Projetos() {
     >
       <h1 className="text-4xl text-center font-bold mb-6">Projetos</h1>
       <div className="w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-        <div className="project p-6 rounded-lg shadow-md">
+        <div className="project p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
           <Carousel
             ariaLabel="FriendFinder"
@@ -80,7 +80,7 @@ export default function Projetos() {
           </Carousel>
           <p>
             FriendFinder é uma aplicação full-stack que ajuda você a encontrar
-            um amigo.
+            amigos.
           </p>
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
             Tecnologias
@@ -99,7 +99,7 @@ export default function Projetos() {
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg mt-3 mr-3"
+              className="bg-black text-white  md:text-xl text-lg mt-3 mr-3"
               href="https://github.com/chouenji/FriendFinder"
             >
               Ver no Github
@@ -159,7 +159,7 @@ export default function Projetos() {
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg mr-3"
+              className="bg-black text-white  md:text-xl text-lg mr-3"
               href="https://pet-prodigy-production.up.railway.app/"
             >
               Ver Demo
@@ -169,7 +169,7 @@ export default function Projetos() {
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
+              className="bg-black text-white  md:text-xl text-lg xl:mt-0 mt-3 mr-3"
               href="https://github.com/CTP-team-meeter/pet-prodigy"
             >
               Ver no Github
@@ -231,7 +231,7 @@ export default function Projetos() {
               target="_blank"
               variant="flat"
               href="https://e-study-production.up.railway.app"
-              className="md:text-xl text-lg mr-3"
+              className="bg-black text-white  md:text-xl text-lg mr-3"
             >
               Ver Demo
             </Button>
@@ -240,19 +240,14 @@ export default function Projetos() {
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
+              className="bg-black text-white md:text-xl text-lg xl:mt-0 mt-3 mr-3"
               href="https://github.com/chouenji/estudy"
             >
               Ver no Github
             </Button>
           </div>
         </div>
-        <div></div>
-        <Link href="#início" className="justify-center items-center">
-          <Button className="text-xl p-6 mb-2" variant="flat" color="success">
-            Voltar ao Início
-          </Button>
-        </Link>
+        <br />
       </div>
     </div>
   );

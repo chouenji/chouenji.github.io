@@ -40,20 +40,20 @@ export default function Projects() {
     <div
       id="projects"
       ref={projectsRef}
-      className={`section bg-white min-h-screen flex flex-col items-center justify-center ${
+      className={`section bg-white  min-h-screen flex flex-col items-center justify-center ${
         isMounted ? 'slide-in' : ''
       }`}
     >
-      <h1 className="text-4xl text-center font-bold mb-6">Projects</h1>
+      <h1 className="text-4xl text-center font-bold mb-10">Projects</h1>
       <div className=" w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-        <div className="project xl:w-full w-[95%] mx-auto  p-6 rounded-lg shadow-md border-t-2">
+        <div className="project xl:w-full w-[95%] mx-auto gap-4 p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>
           <Carousel
             width={1000}
             ariaLabel="FriendFinder"
             showStatus={false}
             showThumbs={false}
-            className="mt-8 flex justify-center"
+            className=" flex justify-center"
             emulateTouch
             autoPlay
             infiniteLoop
@@ -80,8 +80,8 @@ export default function Projects() {
             />
           </Carousel>
           <p>
-            FriendFinder is a full-stack application that helps you find a
-            friend.
+            FriendFinder is a full-stack application that helps you find
+            friends.
           </p>
           <h2 className="text-md font-bold mb-2 mt-4 text-center">
             Technologies
@@ -99,7 +99,7 @@ export default function Projects() {
             <Button
               as={Link}
               target="_blank"
-              className="md:text-xl text-lg mt-3 mr-3"
+              className="md:text-xl text-lg mt-3 mr-3 bg-black text-white"
               variant="flat"
               href="https://github.com/chouenji/FriendFinder"
             >
@@ -107,7 +107,7 @@ export default function Projects() {
             </Button>
           </div>
         </div>
-        <div className="project xl:w-full  w-[95%] mx-auto  bg-white p-6 rounded-lg shadow-md border-t-2">
+        <div className="project w-[95%] h-full mx-auto bg-white p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">Pet Prodigy</h3>
           <Carousel
             width={1000}
@@ -159,12 +159,12 @@ export default function Projects() {
             <li className="mr-6">MongoDB</li>
           </ul>
           <br />
-          <div className="w-full text-center h-10">
+          <div className="xl:w-full text-center">
             <Button
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg mr-3"
+              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3 bg-black text-white"
               href="https://pet-prodigy-production.up.railway.app/"
             >
               View Demo
@@ -173,7 +173,7 @@ export default function Projects() {
             <Button
               as={Link}
               target="_blank"
-              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
+              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3 bg-black text-white"
               variant="flat"
               href="https://github.com/CTP-team-meeter/pet-prodigy"
             >
@@ -181,7 +181,7 @@ export default function Projects() {
             </Button>
           </div>
         </div>
-        <div className="project xl:w-full w-[95%] mx-auto  bg-white p-6 rounded-lg shadow-md border-t-2">
+        <div className="project xl:w-full w-[95%] mx-auto bg-white p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">e-Study</h3>
           <Carousel
             width={1000}
@@ -239,7 +239,7 @@ export default function Projects() {
               as={Link}
               target="_blank"
               variant="flat"
-              className="md:text-xl text-lg mr-3"
+              className="md:text-xl text-lg  bg-black text-white mr-3"
               href="https://e-study-production.up.railway.app"
             >
               View Demo
@@ -248,19 +248,14 @@ export default function Projects() {
               as={Link}
               variant="flat"
               target="_blank"
-              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3"
+              className="md:text-xl text-lg xl:mt-0 mt-3 mr-3 bg-black text-white"
               href="https://github.com/chouenji/estudy"
             >
               View on Github
             </Button>
           </div>
         </div>
-        <div></div>
-        <Link href="#home" className="justify-center items-center">
-          <Button className="text-xl p-6 mb-2" variant="flat" color="success">
-            Back to Top
-          </Button>
-        </Link>
+        <br />
       </div>
     </div>
   );
