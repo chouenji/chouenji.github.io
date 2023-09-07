@@ -2,3 +2,14 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  background: black;
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0.5rem;
+  border: 3px solid black;
+}
