@@ -13,7 +13,7 @@ import {
 import { Avatar } from '@nextui-org/react';
 import port from '@assets/brazil.png';
 import activeSectionNav from 'src/utils/activeSectionNav';
-import scrollHandling from 'src/utils/scrollHandling';
+import scrollHandler from 'src/utils/scrollHandler';
 
 export default function DisplayNavbar({
   secondaryLayoutUrl,
@@ -27,7 +27,7 @@ export default function DisplayNavbar({
   const menuItems = ['Home', 'About', 'Projects'];
 
   activeSectionNav(setActiveSection);
-  scrollHandling(setVisible, prevScrollPos, setPrevScrollPos);
+  scrollHandler(setVisible, prevScrollPos, setPrevScrollPos);
 
   const handleMobileMenuItemClick = () => {
     setIsMenuOpen(false);

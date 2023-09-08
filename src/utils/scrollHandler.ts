@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const scrollHandling = (
+const scrollHandler = (
   setVisible: React.Dispatch<boolean>,
   prevScrollPos: number,
   setPrevScrollPos: React.Dispatch<number>
@@ -19,4 +19,4 @@ const scrollHandling = (
   }, [prevScrollPos]);
 };
 
-export default scrollHandling;
+export default scrollHandler;
