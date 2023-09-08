@@ -1,21 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useRef } from 'react';
 import pp from '@assets/pp.jpg';
 import '@styles/introduction.css';
 import { Button, Link } from '@nextui-org/react';
+import slideAnimation from 'src/utils/slideAnimation';
 
 export default function Introduction() {
-  const [isMounted, setIsMounted] = useState(false);
+  const introRef = useRef(null);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  slideAnimation(introRef);
 
   return (
     <div
       id="início"
-      className={`section flex flex-col items-center justify-center gap-2 min-h-screen ${
-        isMounted ? 'slide-in active' : 'slide-in'
-      }`}
+      ref={introRef}
+      className="section flex flex-col items-center justify-center gap-2 min-h-screen"
     >
       <img
         className="w-72 h-72 rounded-full border-black border-4"

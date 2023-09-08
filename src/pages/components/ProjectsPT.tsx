@@ -12,39 +12,20 @@ import project2c from '@assets/project2c.png';
 import profile3 from '@assets/project3.png';
 import profile3b from '@assets/project3b.png';
 import project3c from '@assets/project3c.png';
+import useAnimation from 'src/utils/slideAnimation';
 
 export default function Projetos() {
-  const [isMounted, setIsMounted] = useState(false);
-
   const projectsRef = useRef(null);
 
-  useEffect(() => {
-    setIsMounted(true);
-    if (projectsRef.current) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('slide-in');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
-      observer.observe(projectsRef.current);
-    }
-  }, []);
+  useAnimation(projectsRef);
 
   return (
     <div
       id="projetos"
       ref={projectsRef}
-      className={`section bg-white min-h-screen flex flex-col items-center justify-center ${
-        isMounted ? 'slide-in' : ''
-      }`}
+      className="section bg-white min-h-screen flex flex-col items-center justify-center"
     >
-      <h1 className="text-4xl text-center font-bold mb-6">Projetos</h1>
+      <h1 className="text-4xl text-center font-bold mb-10">Projetos</h1>
       <div className="w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
         <div className="project p-6 rounded-lg shadow-md border-t-2">
           <h3 className="text-xl font-bold mb-2">FriendFinder</h3>

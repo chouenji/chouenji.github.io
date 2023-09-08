@@ -12,6 +12,8 @@ import {
 } from '@nextui-org/react';
 import { Avatar } from '@nextui-org/react';
 import eng from '@assets/england.png';
+import activeSectionNav from 'src/utils/activeSectionNav';
+import scrollHandling from 'src/utils/scrollHandling';
 
 export default function DisplayNavbar({
   secondaryLayoutUrl,
@@ -22,39 +24,10 @@ export default function DisplayNavbar({
   const [activeSection, setActiveSection] = useState('');
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-
   const menuItems = ['Início', 'Sobre', 'Projetos'];
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        let foundActive = false;
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-            foundActive = true;
-          }
-        });
-
-        // If no section is intersecting, reset activeSection
-        if (!foundActive) {
-          setActiveSection('');
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    const sections = document.querySelectorAll('.section');
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
+  activeSectionNav(setActiveSection);
+  scrollHandling(setVisible, prevScrollPos, setPrevScrollPos);
 
   const handleMobileMenuItemClick = () => {
     setIsMenuOpen(false);
@@ -63,19 +36,6 @@ export default function DisplayNavbar({
   function redirectToSecondaryLayout() {
     window.location.href = secondaryLayoutUrl;
   }
-
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-    setPrevScrollPos(currentScrollPos);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [prevScrollPos]);
 
   return (
     <Navbar
